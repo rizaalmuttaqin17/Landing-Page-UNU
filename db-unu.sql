@@ -1,8 +1,8 @@
 -- --------------------------------------------------------
 -- Host:                         127.0.0.1
--- Server version:               5.7.33 - MySQL Community Server (GPL)
--- Server OS:                    Win64
--- HeidiSQL Version:             11.3.0.6295
+-- Versi server:                 5.7.33 - MySQL Community Server (GPL)
+-- OS Server:                    Win64
+-- HeidiSQL Versi:               11.2.0.6213
 -- --------------------------------------------------------
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -12,7 +12,29 @@
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
--- Dumping structure for table sia-unu.buku
+-- membuang struktur untuk table db_unu.berita
+CREATE TABLE IF NOT EXISTS `berita` (
+  `id_berita` int(11) NOT NULL,
+  `id_kategori` int(11) DEFAULT NULL,
+  `id_user` int(11) unsigned DEFAULT NULL,
+  `judul` text,
+  `isi` text,
+  `gambar` varchar(50) DEFAULT NULL,
+  `tgl_posting` datetime DEFAULT NULL,
+  `tgl_update` datetime DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  `deleted_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id_berita`),
+  KEY `FK_berita_users` (`id_user`),
+  CONSTRAINT `FK_berita_users` FOREIGN KEY (`id_user`) REFERENCES `users` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- Membuang data untuk tabel db_unu.berita: ~0 rows (lebih kurang)
+/*!40000 ALTER TABLE `berita` DISABLE KEYS */;
+/*!40000 ALTER TABLE `berita` ENABLE KEYS */;
+
+-- membuang struktur untuk table db_unu.buku
 CREATE TABLE IF NOT EXISTS `buku` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `judul_buku` varchar(150) DEFAULT NULL,
@@ -37,11 +59,11 @@ CREATE TABLE IF NOT EXISTS `buku` (
   CONSTRAINT `fk_buku_rak` FOREIGN KEY (`id_rak`) REFERENCES `rak` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
--- Dumping data for table sia-unu.buku: ~0 rows (approximately)
+-- Membuang data untuk tabel db_unu.buku: ~0 rows (lebih kurang)
 /*!40000 ALTER TABLE `buku` DISABLE KEYS */;
 /*!40000 ALTER TABLE `buku` ENABLE KEYS */;
 
--- Dumping structure for table sia-unu.denda
+-- membuang struktur untuk table db_unu.denda
 CREATE TABLE IF NOT EXISTS `denda` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `nama` varchar(45) DEFAULT NULL,
@@ -52,11 +74,11 @@ CREATE TABLE IF NOT EXISTS `denda` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
--- Dumping data for table sia-unu.denda: ~0 rows (approximately)
+-- Membuang data untuk tabel db_unu.denda: ~0 rows (lebih kurang)
 /*!40000 ALTER TABLE `denda` DISABLE KEYS */;
 /*!40000 ALTER TABLE `denda` ENABLE KEYS */;
 
--- Dumping structure for table sia-unu.failed_jobs
+-- membuang struktur untuk table db_unu.failed_jobs
 CREATE TABLE IF NOT EXISTS `failed_jobs` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `uuid` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
@@ -69,11 +91,11 @@ CREATE TABLE IF NOT EXISTS `failed_jobs` (
   UNIQUE KEY `failed_jobs_uuid_unique` (`uuid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Dumping data for table sia-unu.failed_jobs: ~0 rows (approximately)
+-- Membuang data untuk tabel db_unu.failed_jobs: ~0 rows (lebih kurang)
 /*!40000 ALTER TABLE `failed_jobs` DISABLE KEYS */;
 /*!40000 ALTER TABLE `failed_jobs` ENABLE KEYS */;
 
--- Dumping structure for table sia-unu.fakultas
+-- membuang struktur untuk table db_unu.fakultas
 CREATE TABLE IF NOT EXISTS `fakultas` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `nama` varchar(45) DEFAULT NULL,
@@ -83,11 +105,11 @@ CREATE TABLE IF NOT EXISTS `fakultas` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
--- Dumping data for table sia-unu.fakultas: ~0 rows (approximately)
+-- Membuang data untuk tabel db_unu.fakultas: ~0 rows (lebih kurang)
 /*!40000 ALTER TABLE `fakultas` DISABLE KEYS */;
 /*!40000 ALTER TABLE `fakultas` ENABLE KEYS */;
 
--- Dumping structure for table sia-unu.migrations
+-- membuang struktur untuk table db_unu.migrations
 CREATE TABLE IF NOT EXISTS `migrations` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `migration` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
@@ -95,7 +117,7 @@ CREATE TABLE IF NOT EXISTS `migrations` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Dumping data for table sia-unu.migrations: ~5 rows (approximately)
+-- Membuang data untuk tabel db_unu.migrations: ~5 rows (lebih kurang)
 /*!40000 ALTER TABLE `migrations` DISABLE KEYS */;
 REPLACE INTO `migrations` (`id`, `migration`, `batch`) VALUES
 	(1, '2014_10_12_000000_create_users_table', 1),
@@ -105,7 +127,7 @@ REPLACE INTO `migrations` (`id`, `migration`, `batch`) VALUES
 	(5, '2014_10_12_200000_add_two_factor_columns_to_users_table', 2);
 /*!40000 ALTER TABLE `migrations` ENABLE KEYS */;
 
--- Dumping structure for table sia-unu.password_resets
+-- membuang struktur untuk table db_unu.password_resets
 CREATE TABLE IF NOT EXISTS `password_resets` (
   `email` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `token` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
@@ -113,11 +135,11 @@ CREATE TABLE IF NOT EXISTS `password_resets` (
   KEY `password_resets_email_index` (`email`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Dumping data for table sia-unu.password_resets: ~0 rows (approximately)
+-- Membuang data untuk tabel db_unu.password_resets: ~0 rows (lebih kurang)
 /*!40000 ALTER TABLE `password_resets` DISABLE KEYS */;
 /*!40000 ALTER TABLE `password_resets` ENABLE KEYS */;
 
--- Dumping structure for table sia-unu.peminjaman
+-- membuang struktur untuk table db_unu.peminjaman
 CREATE TABLE IF NOT EXISTS `peminjaman` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `id_users` int(10) unsigned DEFAULT NULL,
@@ -138,11 +160,11 @@ CREATE TABLE IF NOT EXISTS `peminjaman` (
   CONSTRAINT `fk_peminjaman_users` FOREIGN KEY (`id_users`) REFERENCES `users` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
--- Dumping data for table sia-unu.peminjaman: ~0 rows (approximately)
+-- Membuang data untuk tabel db_unu.peminjaman: ~0 rows (lebih kurang)
 /*!40000 ALTER TABLE `peminjaman` DISABLE KEYS */;
 /*!40000 ALTER TABLE `peminjaman` ENABLE KEYS */;
 
--- Dumping structure for table sia-unu.penerbit
+-- membuang struktur untuk table db_unu.penerbit
 CREATE TABLE IF NOT EXISTS `penerbit` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `nama` varchar(150) DEFAULT NULL,
@@ -154,11 +176,11 @@ CREATE TABLE IF NOT EXISTS `penerbit` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
--- Dumping data for table sia-unu.penerbit: ~0 rows (approximately)
+-- Membuang data untuk tabel db_unu.penerbit: ~0 rows (lebih kurang)
 /*!40000 ALTER TABLE `penerbit` DISABLE KEYS */;
 /*!40000 ALTER TABLE `penerbit` ENABLE KEYS */;
 
--- Dumping structure for table sia-unu.pengarang
+-- membuang struktur untuk table db_unu.pengarang
 CREATE TABLE IF NOT EXISTS `pengarang` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `nama` varchar(150) DEFAULT NULL,
@@ -170,11 +192,11 @@ CREATE TABLE IF NOT EXISTS `pengarang` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
--- Dumping data for table sia-unu.pengarang: ~0 rows (approximately)
+-- Membuang data untuk tabel db_unu.pengarang: ~0 rows (lebih kurang)
 /*!40000 ALTER TABLE `pengarang` DISABLE KEYS */;
 /*!40000 ALTER TABLE `pengarang` ENABLE KEYS */;
 
--- Dumping structure for table sia-unu.rak
+-- membuang struktur untuk table db_unu.rak
 CREATE TABLE IF NOT EXISTS `rak` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `kode_rak` varchar(45) DEFAULT NULL,
@@ -185,11 +207,11 @@ CREATE TABLE IF NOT EXISTS `rak` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
--- Dumping data for table sia-unu.rak: ~0 rows (approximately)
+-- Membuang data untuk tabel db_unu.rak: ~0 rows (lebih kurang)
 /*!40000 ALTER TABLE `rak` DISABLE KEYS */;
 /*!40000 ALTER TABLE `rak` ENABLE KEYS */;
 
--- Dumping structure for table sia-unu.users
+-- membuang struktur untuk table db_unu.users
 CREATE TABLE IF NOT EXISTS `users` (
   `id` int(10) unsigned NOT NULL,
   `id_prodi` int(10) unsigned DEFAULT NULL,
@@ -214,7 +236,7 @@ CREATE TABLE IF NOT EXISTS `users` (
   CONSTRAINT `fk_users_prodi` FOREIGN KEY (`id_prodi`) REFERENCES `prodi` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Dumping data for table sia-unu.users: ~0 rows (approximately)
+-- Membuang data untuk tabel db_unu.users: ~0 rows (lebih kurang)
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
 REPLACE INTO `users` (`id`, `id_prodi`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `tempat_lahir`, `tanggal_lahir`, `alamat`, `telepon`, `jenis_kelamin`, `foto`, `nim/nip`, `created_at`, `updated_at`, `deleted_at`) VALUES
 	(1, NULL, 'Riza', 'admin@gmail.com', NULL, '$2y$10$4iqySaevhtIMCuq7YG2SIuzdT3kO6IkF.najQe6OlmFCu7xYYnqKe', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2022-06-10 07:09:21', '2022-06-10 07:09:21', NULL);
