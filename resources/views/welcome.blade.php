@@ -54,7 +54,7 @@
                 <div class="container">
                     <nav class="navbar navbar-expand-md navbar-light">
                         <a class="navbar-brand" href="index.html">
-                            <img src="{{ asset('img/logo/logo.png') }} " alt="logo">
+                            <img src="{{ asset('img/logo/unu_kt.png') }} " width="75" alt="logo">
                         </a>
                         <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
                             <ul class="navbar-nav">
@@ -83,7 +83,7 @@
                                 </li>
                                 <li class="nav-item">
                                     <a href="#" class="nav-link">
-                                        Services 
+                                        Services
                                         <i class="fa fa-angle-down"></i>
                                     </a>
                                     <ul class="dropdown-menu">
@@ -98,7 +98,7 @@
 
                                 <li class="nav-item">
                                     <a href="#" class="nav-link">
-                                        Projects 
+                                        Projects
                                         <i class="fa fa-angle-down"></i>
                                     </a>
                                     <ul class="dropdown-menu">
@@ -112,7 +112,7 @@
                                 </li>
                                 <li class="nav-item">
                                     <a href="#" class="nav-link">
-                                        Pages 
+                                        Pages
                                         <i class="fa fa-angle-down"></i>
                                     </a>
                                     <ul class="dropdown-menu">
@@ -145,7 +145,7 @@
                                         </li>
                                     </ul>
                                 </li>
-                                
+
                                 <li class="nav-item">
                                     <a href="#" class="nav-link">
                                         Shop
@@ -191,7 +191,7 @@
                                             <option value="5">Eng</option>
                                             <option value="1">USA</option>
                                             <option value="2">Australia</option>
-                                            <option value="0">France</option>  
+                                            <option value="0">France</option>
                                         </select>
                                     </div>
                                 </div>
@@ -209,7 +209,7 @@
         <!-- End Navbar Area -->
 
         <!-- Start Sidebar Modal -->
-		<div class="sidebar-modal">  
+		<div class="sidebar-modal">
 			<div class="modal right fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
 				<div class="modal-dialog" role="document">
 					<div class="modal-content">
@@ -318,7 +318,7 @@
 					</div>
 				</div>
             </div>
-        
+
             <div class="shape-img1">
                 <img src="{{ asset('img/shape/1.svg') }}" alt="image">
             </div>
@@ -549,10 +549,10 @@
                                 </div>
                             </div>
                             <div class="grow-btn">
-                                <a href="#" class="grow-btn-one">Discover More 
+                                <a href="#" class="grow-btn-one">Discover More
                                     <i class="fa fa-arrow-right"></i>
                                 </a>
-                                <a href="#" class="grow-btn-two">How it’s work 
+                                <a href="#" class="grow-btn-two">How it’s work
                                     <i class="fa fa-arrow-right"></i>
                                 </a>
                             </div>
@@ -652,17 +652,17 @@
                                 <ul class="blog-list">
                                     <li>
                                         <a href="single-blog.html">
-                                            <i class="flaticon-user"></i> 
+                                            <i class="flaticon-user"></i>
                                             Janathon Doe
                                         </a>
                                     </li>
                                     <li>
-                                        <i class="flaticon-appointment"></i> 
+                                        <i class="flaticon-appointment"></i>
                                         03 January 2021
                                     </li>
                                 </ul>
-                            </div>  
-                        </div>  
+                            </div>
+                        </div>
                     </div>
 
                     <div class="col-lg-4 col-md-6">
@@ -682,17 +682,17 @@
                                 <ul class="blog-list">
                                     <li>
                                         <a href="#">
-                                            <i class="flaticon-user"></i> 
+                                            <i class="flaticon-user"></i>
                                             JKapler Done
                                         </a>
                                     </li>
                                     <li>
-                                        <i class="flaticon-appointment"></i> 
+                                        <i class="flaticon-appointment"></i>
                                         03 January 2021
                                     </li>
                                 </ul>
-                            </div>  
-                        </div>  
+                            </div>
+                        </div>
                     </div>
 
                     <div class="col-lg-4 col-md-6 offset-md-3 offset-lg-0">
@@ -712,17 +712,17 @@
                                 <ul class="blog-list">
                                     <li>
                                         <a href="#">
-                                            <i class="flaticon-user"></i> 
+                                            <i class="flaticon-user"></i>
                                             Jandu Jon
                                         </a>
                                     </li>
                                     <li>
-                                        <i class="flaticon-appointment"></i> 
+                                        <i class="flaticon-appointment"></i>
                                         03 January 2021
                                     </li>
                                 </ul>
-                            </div>  
-                        </div>  
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -738,10 +738,10 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolet, consectetur adipiscing  seore suspendisse ultrices gravir.</p>
                 </div>
                 <div class="grow-btn">
-                    <a href="contact.html" class="grow-btn-one">Contract us today 
+                    <a href="contact.html" class="grow-btn-one">Contract us today
                         <i class="fa fa-arrow-right"></i>
                     </a>
-                    <a href="#" class="grow-btn-two">Call for more info 
+                    <a href="#" class="grow-btn-two">Call for more info
                         <i class="fa fa-arrow-right"></i>
                     </a>
                 </div>
@@ -864,7 +864,7 @@
                     <div class="row align-items-center">
                         <div class="col-lg-6 col-md-6">
                             <p>
-                                Copyright © 2021 Exto. All Rights Reserved by 
+                                Copyright © 2021 Exto. All Rights Reserved by
                                 <a href="https://themeforest.net/user/hibootstrap/portfolio" target="_blank">
                                   HiBootstrap</a>
                             </p>
