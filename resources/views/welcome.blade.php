@@ -1,28 +1,39 @@
 <!doctype html>
-<html lang="en">
+<html lang="zxx">
     <head>
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-        <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
-        <link rel="stylesheet" href="{{ asset('css/animate.min.css') }}">
-        <link rel="stylesheet" href="{{ asset('css/flaticon.css') }}">
-        <link rel="stylesheet" href="{{ asset('css/flaticon-two.css') }}">
-        <link rel="stylesheet" href="{{ asset('css/flaticon-three.css') }}">
-        <link rel="stylesheet" href="{{ asset('css/odometer.min.css') }}">
-        <link rel="stylesheet" href="{{ asset('css/meanmenu.css') }}">
-        <link rel="stylesheet" href="{{ asset('css/magnific-popup.min.css') }}">
-        <link rel="stylesheet" href="{{ asset('css/nice-select.min.css') }}">
-        <link rel="stylesheet" href="{{ asset('css/owl.carousel.min.css') }}">
-        <link rel="stylesheet" href="{{ asset('css/fontawesome.min.css') }}">
-        <link rel="stylesheet" href="{{ asset('css/style.css') }}">
-        <link rel="stylesheet" href="{{ asset('css/responsive.css') }}">
+        <link rel="stylesheet" href="{{ asset('assets-home/css/bootstrap.min.css') }}">
+        <!-- Animate Min CSS -->
+        <link rel="stylesheet" href="{{ asset('assets-home/css/animate.min.css') }}">
+        <!-- FlatIcon CSS -->
+        <link rel="stylesheet" href="{{ asset('assets-home/css/flaticon.css') }}">
+        <!-- FlatIcon Two CSS -->
+        <link rel="stylesheet" href="{{ asset('assets-home/css/flaticon-two.css') }}">
+        <!-- FlatIcon Three CSS -->
+        <link rel="stylesheet" href="{{ asset('assets-home/css/flaticon-three.css') }}">
+        <!-- Odometer Min CSS -->
+        <link rel="stylesheet" href="{{ asset('assets-home/css/odometer.min.css') }}">
+        <!-- MeanMenu CSS -->
+        <link rel="stylesheet" href="{{ asset('assets-home/css/meanmenu.css') }}">
+        <!-- Magnific Popup Min CSS -->
+        <link rel="stylesheet" href="{{ asset('assets-home/css/magnific-popup.min.css') }}">
+        <!-- Nice Select Min CSS -->
+        <link rel="stylesheet" href="{{ asset('assets-home/css/nice-select.min.css') }}">
+        <!-- Owl Carousel Min CSS -->
+        <link rel="stylesheet" href="{{ asset('assets-home/css/owl.carousel.min.css') }}">
+        <!-- Font Awesome Min CSS -->
+        <link rel="stylesheet" href="{{ asset('assets-home/css/fontawesome.min.css') }}">
+        <!-- Style CSS -->
+        <link rel="stylesheet" href="{{ asset('assets-home/css/style.css') }}">
+        <!-- Responsive CSS -->
+        <link rel="stylesheet" href="{{ asset('assets-home/css/responsive.css') }}">
 
         <title>Exto - SEO & Marketing HTML Template</title>
 
-        <link rel="icon" type="image/png" href="{{ asset('img/favicon.png') }}">
+        <link rel="icon" type="image/png" href="{{ asset('assets-home/img/favicon.png') }}">
     </head>
 
     <body>
@@ -43,7 +54,7 @@
                     <div class="exto-responsive-menu">
                         <div class="logo">
                             <a href="index.html">
-                                <img src="{{ asset('img/logo/logo.png') }} " alt="logo">
+                                <img src="{{ asset('assets-home/img/logo/logo.png') }}" alt="logo">
                             </a>
                         </div>
                     </div>
@@ -54,7 +65,7 @@
                 <div class="container">
                     <nav class="navbar navbar-expand-md navbar-light">
                         <a class="navbar-brand" href="index.html">
-                            <img src="{{ asset('img/logo/logo.png') }} " alt="logo">
+                            <img src="{{ asset('assets-home/img/logo/logo.png') }}" alt="logo">
                         </a>
                         <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
                             <ul class="navbar-nav">
@@ -221,14 +232,14 @@
 							</button>
 							<h2 class="modal-title" id="myModalLabel2">
 								<a href="index.html">
-									<img src="{{ asset('img/logo/logo.png') }} " alt="Logo">
+									<img src="{{ asset('assets-home/img/logo/logo.png') }}" alt="Logo">
 								</a>
 							</h2>
 						</div>
 						<div class="modal-body">
 							<div class="sidebar-modal-widget">
                                 <h3 class="title">Welcome To Exto</h3>
-                                <img src="{{ asset('img/about.jpg') }}" alt="">
+                                <img src="{{ asset('assets-home/img/about.jpg') }}" alt="">
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo dolore saepe exercitationem alias unde, blanditiis non error</p>
 							</div>
 							<div class="sidebar-modal-widget">
@@ -308,11 +319,11 @@
 
                             <div class="col-lg-6 col-md-12">
 								<div class="startup-image">
-                                    <img src="{{ asset('img/startup-home/startup.png') }} " class="wow fadeInUp" data-wow-delay="0.6s" alt="image">
+                                    <img src="{{ asset('assets-home/img/startup-home/startup.png') }}" class="wow fadeInUp" data-wow-delay="0.6s" alt="image">
                                 </div>
                             </div>
                             <div class="startup-shape">
-                                <img src="{{ asset('img/startup-home/startup-shape.png') }} " alt="image">
+                                <img src="{{ asset('assets-home/img/startup-home/startup-shape.png') }}" alt="image">
                             </div>
 						</div>
 					</div>
@@ -320,19 +331,19 @@
             </div>
         
             <div class="shape-img1">
-                <img src="{{ asset('img/shape/1.svg') }}" alt="image">
+                <img src="{{ asset('assets-home/img/shape/1.svg') }}" alt="image">
             </div>
             <div class="shape-img2">
-                <img src="{{ asset('img/shape/2.svg') }}" alt="image">
+                <img src="{{ asset('assets-home/img/shape/2.svg') }}" alt="image">
             </div>
             <div class="shape-img3">
-                <img src="{{ asset('img/shape/3.png') }} " alt="image">
+                <img src="{{ asset('assets-home/img/shape/3.png') }}" alt="image">
             </div>
             <div class="shape-img4">
-                <img src="{{ asset('img/shape/4.png') }} " alt="image">
+                <img src="{{ asset('assets-home/img/shape/4.png') }}" alt="image">
             </div>
             <div class="shape-img5">
-                <img src="{{ asset('img/shape/6.png') }} " alt="image">
+                <img src="{{ asset('assets-home/img/shape/6.png') }}" alt="image">
             </div>
 		</div>
         <!-- End Startup Home Area -->
@@ -350,27 +361,27 @@
                         <div class="partner-slider owl-carousel owl-theme">
                             <div class="partner-item">
                                 <a href="#">
-                                    <img src="{{ asset('img/partnar/6.png') }}" alt="partner">
+                                    <img src="{{ asset('assets-home/img/partnar/6.png') }}" alt="partner">
                                 </a>
                             </div>
                             <div class="partner-item">
                                 <a href="#">
-                                    <img src="{{ asset('img/partnar/7.png') }}" alt="partner">
+                                    <img src="{{ asset('assets-home/img/partnar/7.png') }}" alt="partner">
                                 </a>
                             </div>
                             <div class="partner-item">
                                 <a href="#">
-                                    <img src="{{ asset('img/partnar/8.png') }}" alt="partner">
+                                    <img src="{{ asset('assets-home/img/partnar/8.png') }}" alt="partner">
                                 </a>
                             </div>
                             <div class="partner-item">
                                 <a href="#">
-                                    <img src="{{ asset('img/partnar/9.png') }}" alt="partner">
+                                    <img src="{{ asset('assets-home/img/partnar/9.png') }}" alt="partner">
                                 </a>
                             </div>
                             <div class="partner-item">
                                 <a href="#">
-                                    <img src="{{ asset('img/partnar/10.png') }}" alt="partner">
+                                    <img src="{{ asset('assets-home/img/partnar/10.png') }}" alt="partner">
                                 </a>
                             </div>
                         </div>
@@ -433,7 +444,7 @@
                 <div class="row align-items-center">
                     <div class="col-lg-6 col-md-12">
                         <div class="circulate-image">
-                            <img src="{{ asset('img/about.jpg') }}" alt="image">
+                            <img src="{{ asset('assets-home/img/about.jpg') }}" alt="image">
                         </div>
                     </div>
 
@@ -561,7 +572,7 @@
 
                     <div class="col-lg-6 col-md-12">
                         <div class="grow-image">
-                            <img src="{{ asset('img/grow.jpg') }}" alt="image">
+                            <img src="{{ asset('assets-home/img/grow.jpg') }}" alt="image">
                         </div>
                     </div>
                 </div>
@@ -575,7 +586,7 @@
                 <div class="row align-items-center">
                     <div class="col-lg-6 col-md-12">
                         <div class="develop-image">
-                            <img src="{{ asset('img/develop.jpg') }}" alt="image">
+                            <img src="{{ asset('assets-home/img/develop.jpg') }}" alt="image">
                         </div>
                     </div>
 
@@ -639,7 +650,7 @@
                         <div class="blog-item">
                             <div class="blog-image">
                                 <a href="single-blog.html">
-                                    <img src="{{ asset('img/blog/1.jpg') }}" alt="image">
+                                    <img src="{{ asset('assets-home/img/blog/1.jpg') }}" alt="image">
                                 </a>
                             </div>
                             <div class="single-blog-item">
@@ -669,7 +680,7 @@
                         <div class="blog-item">
                             <div class="blog-image">
                                 <a href="single-blog.html">
-                                    <img src="{{ asset('img/blog/2.jpg') }}" alt="image">
+                                    <img src="{{ asset('assets-home/img/blog/2.jpg') }}" alt="image">
                                 </a>
                             </div>
                             <div class="single-blog-item">
@@ -699,7 +710,7 @@
                         <div class="blog-item">
                             <div class="blog-image">
                                 <a href="single-blog.html">
-                                    <img src="{{ asset('img/blog/3.jpg') }}" alt="image">
+                                    <img src="{{ asset('assets-home/img/blog/3.jpg') }}" alt="image">
                                 </a>
                             </div>
                             <div class="single-blog-item">
@@ -755,7 +766,7 @@
                 <div class="row">
                     <div class="col-lg-3 col-md-6 col-sm-6">
                         <div class="footer-area-content">
-                            <img src="{{ asset('img/logo/logo.png') }}" alt="image">
+                            <img src="{{ asset('assets-home/img/logo/logo.png') }}" alt="image">
                             <p>Wuis ipsum suspendisse ultrices gravida. Risus commodo viverra  lacus vel facilisis.</p>
                            <!-- Button trigger modal -->
                         <button type="button" class="default-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -883,16 +894,16 @@
                 </div>
             </div>
             <div class="shape shape-1">
-                <img src="{{ asset('img/shape/13.png') }}" alt="">
+                <img src="{{ asset('assets-home/img/shape/13.png') }}" alt="">
             </div>
             <div class="shape shape-2">
-                <img src="{{ asset('img/shape/14.png') }}" alt="">
+                <img src="{{ asset('assets-home/img/shape/14.png') }}" alt="">
             </div>
             <div class="shape shape-3">
-                <img src="{{ asset('img/shape/15.png') }}" alt="">
+                <img src="{{ asset('assets-home/img/shape/15.png') }}" alt="">
             </div>
             <div class="shape shape-4">
-                <img src="{{ asset('img/shape/16.png') }}" alt="">
+                <img src="{{ asset('assets-home/img/shape/16.png') }}" alt="">
             </div>
         </footer>
         <!-- End Footer Section -->
@@ -925,21 +936,21 @@
         </div>
         <!-- End Go Top Section -->
 
-        <script src="{{ asset('js/jquery.min.js') }}"></script>
-        <script src="{{ asset('js/popper.min.js') }}"></script>
-        <script src="{{ asset('js/bootstrap.min.js') }}"></script>
-        <script src="{{ asset('js/jquery.meanmenu.js') }}"></script>
-        <script src="{{ asset('js/jquery.appear.min.js') }}"></script>
-        <script src="{{ asset('js/odometer.min.js') }}"></script>
-        <script src="{{ asset('js/owl.carousel.min.js') }}"></script>
-        <script src="{{ asset('js/jquery.magnific-popup.min.js') }}"></script>
-        <script src="{{ asset('js/jquery.nice-select.min.js') }}"></script>
-        <script src="{{ asset('js/wow.min.js') }}"></script>
-		<script src="{{ asset('js/form-validator.min.js') }}"></script>
-        <script src="{{ asset('js/jquery.ajaxchimp.min.js') }}"></script>
-		<script src="{{ asset('js/contact-form-script.js') }}"></script>
-        <script src="{{ asset('js/particles.min.js') }}"></script>
-        <script src="{{ asset('js/progressbar.min.js') }}"></script>
-        <script src="{{ asset('js/main.js') }}"></script>
+        <script src="{{ asset('assets-home/js/jquery.min.js') }}"></script>
+        <script src="{{ asset('assets-home/js/popper.min.js') }}"></script>
+        <script src="{{ asset('assets-home/js/bootstrap.min.js') }}"></script>
+        <script src="{{ asset('assets-home/js/jquery.meanmenu.js') }}"></script>
+        <script src="{{ asset('assets-home/js/jquery.appear.min.js') }}"></script>
+        <script src="{{ asset('assets-home/js/odometer.min.js') }}"></script>
+        <script src="{{ asset('assets-home/js/owl.carousel.min.js') }}"></script>
+        <script src="{{ asset('assets-home/js/jquery.magnific-popup.min.js') }}"></script>
+        <script src="{{ asset('assets-home/js/jquery.nice-select.min.js') }}"></script>
+        <script src="{{ asset('assets-home/js/wow.min.js') }}"></script>
+		<script src="{{ asset('assets-home/js/form-validator.min.js') }}"></script>
+        <script src="{{ asset('assets-home/js/jquery.ajaxchimp.min.js') }}"></script>
+		<script src="{{ asset('assets-home/js/contact-form-script.js') }}"></script>
+        <script src="{{ asset('assets-home/js/particles.min.js') }}"></script>
+        <script src="{{ asset('assets-home/js/progressbar.min.js') }}"></script>
+        <script src="{{ asset('assets-home/js/main.js') }}"></script>
     </body >
 </html>
