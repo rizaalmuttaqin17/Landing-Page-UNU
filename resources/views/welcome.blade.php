@@ -31,9 +31,9 @@
         <!-- Responsive CSS -->
         <link rel="stylesheet" href="{{ asset('assets-home/css/responsive.css') }}">
 
-        <title>Exto - SEO & Marketing HTML Template</title>
+        <title>UNU Kaltim</title>
 
-        <link rel="icon" type="image/png" href="{{ asset('assets-home/img/favicon.png') }}">
+        <link rel="icon" type="image/png" href="{{ asset('assets-home/img/logo/unu_kt.png') }}">
     </head>
 
     <body>
@@ -54,7 +54,7 @@
                     <div class="exto-responsive-menu">
                         <div class="logo">
                             <a href="index.html">
-                                <img src="{{ asset('assets-home/img/logo/logo.png') }}" alt="logo">
+                                <img src="{{ asset('assets-home/img/logo/unu_kt.png') }}" width="35" alt="logo">
                             </a>
                         </div>
                     </div>
@@ -65,51 +65,60 @@
                 <div class="container">
                     <nav class="navbar navbar-expand-md navbar-light">
                         <a class="navbar-brand" href="index.html">
-                            <img src="{{ asset('assets-home/img/logo/unu_kt.png') }}" alt="logo">
+                            <img src="{{ asset('assets-home/img/logo/unu_kt.png') }}" alt="logo" width="70">
                         </a>
                         <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
                             <ul class="navbar-nav">
                                 <li class="nav-item">
                                     <a href="#" class="nav-link active">
-                                        Home
+                                        UNU Kaltim
                                         <i class="fa fa-angle-down"></i>
                                     </a>
                                     <ul class="dropdown-menu">
                                         <li class="nav-item">
-                                            <a href="index.html" class="nav-link">SaaS Home</a>
+                                            <a href="index-2.html" class="nav-link">Profile</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="index-2.html" class="nav-link">Marketing Home</a>
+                                            <a href="index-3.html" class="nav-link">Sejarah, logo, dan motto</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="index-3.html" class="nav-link active">Startup Home</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="index-4.html" class="nav-link">SEO Agency Home</a>
+                                            <a href="index-4.html" class="nav-link">Kerjasama</a>
                                         </li>
                                     </ul>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="about.html" class="nav-link">About</a>
-                                </li>
-                                <li class="nav-item">
                                     <a href="#" class="nav-link">
-                                        Services
+                                        Akademik
                                         <i class="fa fa-angle-down"></i>
                                     </a>
                                     <ul class="dropdown-menu">
                                         <li class="nav-item">
-                                            <a href="services.html" class="nav-link">Service</a>
+                                            <a href="services.html" class="nav-link">Seleksi Masuk</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="single-services.html" class="nav-link">Service Details</a>
+                                            <a href="single-services.html" class="nav-link">Beasiswa</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="single-services.html" class="nav-link">Fakultas</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="single-services.html" class="nav-link">Program Studi</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="single-services.html" class="nav-link">Kalender Akademik</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="single-services.html" class="nav-link">Portal Sister</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="single-services.html" class="nav-link">Siakad</a>
                                         </li>
                                     </ul>
                                 </li>
 
                                 <li class="nav-item">
                                     <a href="#" class="nav-link">
-                                        Projects
+                                        Lembaga
                                         <i class="fa fa-angle-down"></i>
                                     </a>
                                     <ul class="dropdown-menu">
@@ -123,7 +132,7 @@
                                 </li>
                                 <li class="nav-item">
                                     <a href="#" class="nav-link">
-                                        Pages
+                                        Kehidupan Kampus
                                         <i class="fa fa-angle-down"></i>
                                     </a>
                                     <ul class="dropdown-menu">
@@ -159,7 +168,7 @@
 
                                 <li class="nav-item">
                                     <a href="#" class="nav-link">
-                                        Shop
+                                        Layanan
                                         <i class="fa fa-angle-down"></i>
                                     </a>
                                     <ul class="dropdown-menu">
@@ -179,7 +188,7 @@
                                 </li>
                                 <li class="nav-item">
                                     <a href="#" class="nav-link">
-                                        Blog
+                                        Berita
                                         <i class="fa fa-angle-down"></i>
                                     </a>
                                     <ul class="dropdown-menu">
@@ -206,11 +215,6 @@
                                         </select>
                                     </div>
                                 </div>
-                                <div class="sidebar-menu" data-bs-toggle="modal" data-bs-target="#myModal2">
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                </div>
                             </div>
                         </div>
                     </nav>
@@ -220,7 +224,7 @@
         <!-- End Navbar Area -->
 
         <!-- Start Sidebar Modal -->
-		<div class="sidebar-modal">
+		{{-- <div class="sidebar-modal">
 			<div class="modal right fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
 				<div class="modal-dialog" role="document">
 					<div class="modal-content">
@@ -291,7 +295,7 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</div> --}}
         <!-- End Sidebar Modal -->
 
         <!-- Start Startup Home Area -->
@@ -302,9 +306,9 @@
 						<div class="row align-items-center">
 							<div class="col-lg-6 col-md-12">
 								<div class="hero-content">
-                                    <span>We are a startup Agency</span>
-									<h1>Business Makes Success <b>Strategy</b></h1>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolet suspendisse ultrices gravida. </p>
+                                    <span>Universitas Nahdlatul Ulama Kalimantan Timur</span>
+									<h1 style="font-size: 35px;">We Transforming <b style="font-size: 35px">Islamic Values</b> For A Sustainable Future</h1>
+                                    <p style="font-size: 25px;">Gapai cita-citamu dan raihlah beragam beasiswa di UNU Kaltim</p>
                                     <div class="startup-btn">
                                         <a href="#" class="startup-btn-one">
                                             Get A Quote <i class="fa fa-arrow-right"></i>
@@ -319,7 +323,7 @@
 
                             <div class="col-lg-6 col-md-12">
 								<div class="startup-image">
-                                    <img src="{{ asset('assets-home/img/startup-home/startup.png') }}" class="wow fadeInUp" data-wow-delay="0.6s" alt="image">
+                                    <img src="{{ asset('assets-home/img/unu/kampus-2.png') }}" class="wow fadeInUp " width="500" data-wow-delay="0.6s" alt="image">
                                 </div>
                             </div>
                             <div class="startup-shape">
@@ -349,7 +353,7 @@
         <!-- End Startup Home Area -->
 
         <!-- Start Partner Two Area -->
-        <div class="partnar-two-section">
+        {{-- <div class="partnar-two-section">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-4">
@@ -388,16 +392,15 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> --}}
         <!-- End Partner Two Area -->
 
         <!-- Start Solutions Section -->
         <section class="solutions-section ptb-100">
             <div class="container">
                 <div class="solutions-title">
-                    <span>What We do</span>
-                    <h3>Solutions tailored to fit your world</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolet, consectetur adipiscing  seore suspendisse ultrices gravir.</p>
+                    <h3>Fakultas dan Program Studi Unggulan Universitas Nahdlatul Ulama Kalimantan Timur</h3>
+                    <p>Universitas Nahdlatul Ulama Kalimantan Timur memiliki Fakultas dan Program Studi Unggulan untuk menunjang pendidikan kepada mahasiswa lebih baik.</p>
                 </div>
 
                 <div class="row">
@@ -406,7 +409,7 @@
                             <div class="icon">
                                 <i class="flaticon-data"></i>
                             </div>
-                            <h3>User-Friendly Behaviour For Business mind people</h3>
+                            <h3>Fakultas Ekonomi & Bisnis</h3>
                             <p>Lorem ipsum dolor sit amet consecte adipiscing elit sed do eiusincidunt.</p>
                             <a href="single-services.html" class="">Read More</a>
                         </div>
@@ -417,18 +420,28 @@
                             <div class="icon">
                                 <i class="flaticon-goal"></i>
                             </div>
-                            <h3>Business Development All Kind of Business</h3>
+                            <h3>Fakultas Farmasi</h3>
                             <p>Lorem ipsum dolor sit amet consecte adipiscing elit sed do eiusincidunt.</p>
                             <a href="single-services.html" class="">Read More</a>
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-6 offset-md-3 offset-lg-0">
+                    <div class="col-lg-4 col-md-6">
                         <div class="solutions-area-content">
                             <div class="icon">
                                 <i class="flaticon-modules"></i>
                             </div>
-                            <h3>Management is no risk here if We support you</h3>
+                            <h3>Fakultas Teknik</h3>
+                            <p>Lorem ipsum dolor sit amet consecte adipiscing elit sed do eiusincidunt.</p>
+                            <a href="single-services.html" class="">Read More</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="solutions-area-content">
+                            <div class="icon">
+                                <i class="flaticon-goal"></i>
+                            </div>
+                            <h3>Fakultas Ilmu Sosial & Kependidikan</h3>
                             <p>Lorem ipsum dolor sit amet consecte adipiscing elit sed do eiusincidunt.</p>
                             <a href="single-services.html" class="">Read More</a>
                         </div>
