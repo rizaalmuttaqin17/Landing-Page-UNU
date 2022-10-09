@@ -53,21 +53,12 @@ class User extends Authenticatable
 
     public static $rules=[
         'name'=>'required',
-        'telepon'=>'required'
     ];
-
-    /**
-     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
-     **/
-    public function idProdi()
-    {
-        return $this->belongsTo(\App\Models\Prodi::class, 'id_prodi');
-    }
 
     /**
      * @return \Illuminate\Database\Eloquent\Relations\HasMany
      **/
-    public function berita()
+    public function beritas()
     {
         return $this->hasMany(\App\Models\Beritum::class, 'id_user');
     }
@@ -75,40 +66,16 @@ class User extends Authenticatable
     /**
      * @return \Illuminate\Database\Eloquent\Relations\HasMany
      **/
-    public function jadwals()
+    public function mahasiswas()
     {
-        return $this->hasMany(\App\Models\Jadwal::class, 'id_user_dosen');
+        return $this->hasMany(\App\Models\Mahasiswa::class, 'id_users');
     }
 
     /**
      * @return \Illuminate\Database\Eloquent\Relations\HasMany
      **/
-    public function khs()
+    public function dosens()
     {
-        return $this->hasMany(\App\Models\Kh::class, 'id_user');
-    }
-
-    /**
-     * @return \Illuminate\Database\Eloquent\Relations\HasMany
-     **/
-    public function krs()
-    {
-        return $this->hasMany(\App\Models\Kr::class, 'id_user_wali');
-    }
-
-    /**
-     * @return \Illuminate\Database\Eloquent\Relations\HasMany
-     **/
-    public function kr1s()
-    {
-        return $this->hasMany(\App\Models\Kr::class, 'id_user_mhs');
-    }
-
-    /**
-     * @return \Illuminate\Database\Eloquent\Relations\HasMany
-     **/
-    public function mataKuliahs()
-    {
-        return $this->hasMany(\App\Models\MataKuliah::class, 'id_user_dosen');
+        return $this->hasMany(\App\Models\Dosen::class, 'id_users');
     }
 }

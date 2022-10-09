@@ -53,7 +53,7 @@
 /* 2. Mixin */
 /* 3. Bootstrap Override */
 /* 3.1 Misc */
-@import url("//fonts.googleapis.com/css?family=Nunito:400,600,700,800");
+@import url("//fonts.googleapis.com/css?family=Poppins");
 
 .btn:focus,
 .btn:active,
@@ -2737,7 +2737,7 @@ body {
     background-color: #f4f6f9;
     font-size: 14px;
     font-weight: 400;
-    font-family: "Nunito", "Segoe UI", arial;
+    font-family: "Poppins", "Segoe UI", arial;
     color: #6c757d;
 }
 
@@ -2878,7 +2878,7 @@ blockquote {
     background-color: #f9f9f9;
     border-radius: 3px;
     position: relative;
-    font-family: 'Time new Romans';
+    font-family: 'Poppins';
     font-size: 16px;
     letter-spacing: .3px;
 }

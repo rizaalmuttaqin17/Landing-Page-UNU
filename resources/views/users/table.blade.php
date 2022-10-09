@@ -8,7 +8,6 @@
                 <th>Alamat</th>
                 <th>Telepon</th>
                 <th>Jenis Kelamin</th>
-                <th>Foto</th>
                 <th>Agama</th>
                 <th colspan="3">Action</th>
             </tr>
@@ -24,12 +23,6 @@
                     {{ $user->name }} <br>
                     {{ $user->email }}
                 </td>
-                <td>{{ $user->tempat_lahir }}, {{ $user->tanggal_lahir }}</td>
-                <td>{{ $user->alamat }}</td>
-                <td>{{ $user->telepon }}</td>
-                <td>{{ $user->jenis_kelamin }}</td>
-                <td>{{ $user->foto }}</td>
-                <td>{{ $user->agama }}</td>
                 <td class=" text-center">
                     {!! Form::open(['route' => ['users.destroy', $user->id], 'method' => 'delete']) !!}
                     <div class='btn-group'>
